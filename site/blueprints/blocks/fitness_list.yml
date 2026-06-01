@@ -1,0 +1,9 @@
+name: Fitness Listing
+icon: heart
+preview: fields
+help: Automatically displays every fitness class added under the Fitness page. Class details are edited on each class, not here.
+fields:
+  heading:
+    label: Section Heading
+    type: text
+    help: Optional heading shown above the fitness class grid. Leave empty to hide.

@@ -1,45 +1,4 @@
-<?php
-$page_title = "Private & Group Lessons | Fatcat Ballroom & Dance Company";
-
-// --- Simple submission handling (stub) -----------------------------------
-$form_submitted = false;
-$errors = [];
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Minimal required-field validation
-    $required = [
-        "first_name" => "First name",
-        "email" => "Email",
-        "contact_method" => "Preferred contact method",
-        "days" => "Availability (days)",
-        "times" => "Preferred times",
-        "dances" => "Dances you want to learn",
-        "instructor_pref" => "Instructor preference",
-        "attendees" => "Who is coming",
-        "experience" => "Experience level",
-        "goals" => "Dance goals",
-    ];
-
-    foreach ($required as $field => $label) {
-        if (empty($_POST[$field])) {
-            $errors[] = $label . " is required.";
-        }
-    }
-
-    if (
-        !empty($_POST["email"]) &&
-        !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)
-    ) {
-        $errors[] = "Please enter a valid email address.";
-    }
-
-    if (empty($errors)) {
-        // TODO: send email / persist to DB here.
-        $form_submitted = true;
-    }
-}
-?>
-<?php include "includes/header.php"; ?>
+<?php snippet('header') ?>
 
 <!-- Page header -->
 <section class="pt-32 pb-14 sm:pb-16 px-4 border-b border-white/[0.06]">
@@ -49,16 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
         </svg>
         <h1 class="font-display text-4xl sm:text-5xl text-white mb-6 font-normal leading-snug">
-            Private &amp; Group Lessons
+            <?= $page->title() ?>
         </h1>
         <p class="text-base text-stone-400 leading-relaxed max-w-xl mx-auto">
-            For information about lessons or to schedule a private lesson, complete the form below.
-            The details you share help us answer your questions and match you with an instructor who
-            teaches the dances you want to learn, on the days you&rsquo;re available.
+            <?= $page->intro() ?>
         </p>
         <p class="text-base text-stone-400 leading-relaxed mt-4 max-w-xl mx-auto">
-            Our instructors are independent, so they set their own rates and schedules. There&rsquo;s no
-            obligation when receiving a callback, so get in touch - we&rsquo;d love to hear from you!
+            <?= $page->sub_intro() ?>
         </p>
     </div>
 </section>
@@ -84,8 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             <!-- Intro callout -->
             <div class="mb-10 p-6 rounded border border-[#c9a96e]/30 bg-[#c9a96e]/[0.04]">
-                <h2 class="font-display text-2xl text-white mb-1 font-normal">No partner? No problem.</h2>
-                <p class="text-stone-400">We teach both singles and couples. Please indicate Private or Group lesson in your message.</p>
+                <h2 class="font-display text-2xl text-white mb-1 font-normal"><?= $page->no_partner_title() ?></h2>
+                <p class="text-stone-400"><?= $page->no_partner_text() ?></p>
             </div>
 
             <?php if (!empty($errors)): ?>
@@ -93,13 +49,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <p class="text-red-300 font-medium mb-2">Please fix the following:</p>
                     <ul class="list-disc list-inside text-red-300/90 text-sm space-y-1">
                         <?php foreach ($errors as $error): ?>
-                            <li><?php echo htmlspecialchars($error); ?></li>
+                            <li><?= htmlspecialchars($error) ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
             <?php endif; ?>
 
-            <form method="POST" action="/private-lessons.php" class="space-y-12">
+            <form method="POST" action="<?= $page->url() ?>" class="space-y-12">
 
                 <!-- Personal Information -->
                 <fieldset>
@@ -112,17 +68,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 First Name <span class="text-[#c9a96e]">*</span>
                             </label>
                             <input type="text" id="first_name" name="first_name" required
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["first_name"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['first_name'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                         </div>
                         <div>
                             <label for="last_name" class="block text-sm text-stone-300 mb-2 tracking-wide">Last Name</label>
                             <input type="text" id="last_name" name="last_name"
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["last_name"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['last_name'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                         </div>
                         <div>
@@ -130,17 +82,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                 Email <span class="text-[#c9a96e]">*</span>
                             </label>
                             <input type="email" id="email" name="email" required
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["email"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['email'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                         </div>
                         <div>
                             <label for="phone" class="block text-sm text-stone-300 mb-2 tracking-wide">Phone</label>
                             <input type="tel" id="phone" name="phone"
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["phone"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['phone'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                         </div>
                     </div>
@@ -152,9 +100,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <div class="flex flex-wrap gap-3">
                             <?php foreach (["Text", "Email"] as $opt): ?>
                                 <label class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="radio" name="contact_method" value="<?php echo $opt; ?>" required
-                                           class="accent-[#c9a96e] w-4 h-4">
-                                    <span class="text-stone-300 text-sm"><?php echo $opt; ?></span>
+                                    <input type="radio" name="contact_method" value="<?= $opt ?>" required
+                                           class="accent-[#c9a96e] w-4 h-4" <?= (($form_data['contact_method'] ?? '') === $opt) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= $opt ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -172,21 +120,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             Which days are you available? <span class="text-[#c9a96e]">*</span>
                         </span>
                         <div class="flex flex-wrap gap-3">
-                            <?php foreach (
-                                [
-                                    "Monday",
-                                    "Tuesday",
-                                    "Wednesday",
-                                    "Thursday",
-                                    "Friday",
-                                    "Saturday",
-                                ]
-                                as $day
-                            ): ?>
+                            <?php $days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; ?>
+                            <?php foreach ($days as $day): ?>
                                 <label class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="checkbox" name="days[]" value="<?php echo $day; ?>"
-                                           class="accent-[#c9a96e] w-4 h-4">
-                                    <span class="text-stone-300 text-sm"><?php echo $day; ?></span>
+                                    <input type="checkbox" name="days[]" value="<?= $day ?>"
+                                           class="accent-[#c9a96e] w-4 h-4" <?= in_array($day, $form_data['days'] ?? []) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= $day ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -197,19 +136,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             What times are best for private lessons? <span class="text-[#c9a96e]">*</span>
                         </span>
                         <div class="flex flex-wrap gap-3">
-                            <?php foreach (
-                                [
-                                    "Morning",
-                                    "Early Afternoon",
-                                    "Late Afternoon",
-                                    "Evening",
-                                ]
-                                as $time
-                            ): ?>
+                            <?php $times = ["Morning", "Early Afternoon", "Late Afternoon", "Evening"]; ?>
+                            <?php foreach ($times as $time): ?>
                                 <label class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="checkbox" name="times[]" value="<?php echo $time; ?>"
-                                           class="accent-[#c9a96e] w-4 h-4">
-                                    <span class="text-stone-300 text-sm"><?php echo $time; ?></span>
+                                    <input type="checkbox" name="times[]" value="<?= $time ?>"
+                                           class="accent-[#c9a96e] w-4 h-4" <?= in_array($time, $form_data['times'] ?? []) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= $time ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -227,28 +159,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             What dances do you want to learn? <span class="text-[#c9a96e]">*</span>
                         </span>
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                            <?php foreach (
-                                [
-                                    "Waltz",
-                                    "Foxtrot",
-                                    "Tango",
-                                    "Ballroom - other",
-                                    "Rumba",
-                                    "Cha Cha",
-                                    "Samba",
-                                    "East Coast Swing",
-                                    "West Coast Swing/Club",
-                                    "Latin - other",
-                                    "Country",
-                                ]
-                                as $dance
-                            ): ?>
+                            <?php $dances = ["Waltz", "Foxtrot", "Tango", "Ballroom - other", "Rumba", "Cha Cha", "Samba", "East Coast Swing", "West Coast Swing/Club", "Latin - other", "Country"]; ?>
+                            <?php foreach ($dances as $dance): ?>
                                 <label class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="checkbox" name="dances[]" value="<?php echo htmlspecialchars(
-                                        $dance,
-                                    ); ?>"
-                                           class="accent-[#c9a96e] w-4 h-4 flex-shrink-0">
-                                    <span class="text-stone-300 text-sm"><?php echo $dance; ?></span>
+                                    <input type="checkbox" name="dances[]" value="<?= htmlspecialchars($dance) ?>"
+                                           class="accent-[#c9a96e] w-4 h-4 flex-shrink-0" <?= in_array($dance, $form_data['dances'] ?? []) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= $dance ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -262,9 +178,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             <select id="instructor_pref" name="instructor_pref" required
                                     class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                                 <option value="" disabled selected>Select one&hellip;</option>
-                                <option value="Any">Any</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
+                                <option value="Any" <?= (($form_data['instructor_pref'] ?? '') === 'Any') ? 'selected' : '' ?>>Any</option>
+                                <option value="Male" <?= (($form_data['instructor_pref'] ?? '') === 'Male') ? 'selected' : '' ?>>Male</option>
+                                <option value="Female" <?= (($form_data['instructor_pref'] ?? '') === 'Female') ? 'selected' : '' ?>>Female</option>
                             </select>
                         </div>
                         <div>
@@ -274,10 +190,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             <select id="attendees" name="attendees" required
                                     class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                                 <option value="" disabled selected>Select one&hellip;</option>
-                                <option value="One adult">One adult</option>
-                                <option value="Couple">Couple</option>
-                                <option value="Teen">Teen</option>
-                                <option value="Child 6 to 12 years old">Child 6 to 12 years old</option>
+                                <option value="One adult" <?= (($form_data['attendees'] ?? '') === 'One adult') ? 'selected' : '' ?>>One adult</option>
+                                <option value="Couple" <?= (($form_data['attendees'] ?? '') === 'Couple') ? 'selected' : '' ?>>Couple</option>
+                                <option value="Teen" <?= (($form_data['attendees'] ?? '') === 'Teen') ? 'selected' : '' ?>>Teen</option>
+                                <option value="Child 6 to 12 years old" <?= (($form_data['attendees'] ?? '') === 'Child 6 to 12 years old') ? 'selected' : '' ?>>Child 6 to 12 years old</option>
                             </select>
                         </div>
                     </div>
@@ -287,22 +203,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             Have you taken lessons before? <span class="text-[#c9a96e]">*</span>
                         </span>
                         <div class="space-y-2.5">
-                            <?php foreach (
-                                [
-                                    "This will be my first lesson",
-                                    "Yes, I've taken some lessons",
-                                    "Yes, I've taken many lessons",
-                                ]
-                                as $exp
-                            ): ?>
+                            <?php $experiences = ["This will be my first lesson", "Yes, I've taken some lessons", "Yes, I've taken many lessons"]; ?>
+                            <?php foreach ($experiences as $exp): ?>
                                 <label class="flex items-center gap-3 px-4 py-3 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="radio" name="experience" value="<?php echo htmlspecialchars(
-                                        $exp,
-                                    ); ?>" required
-                                           class="accent-[#c9a96e] w-4 h-4">
-                                    <span class="text-stone-300 text-sm"><?php echo htmlspecialchars(
-                                        $exp,
-                                    ); ?></span>
+                                    <input type="radio" name="experience" value="<?= htmlspecialchars($exp) ?>" required
+                                           class="accent-[#c9a96e] w-4 h-4" <?= (($form_data['experience'] ?? '') === $exp) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= htmlspecialchars($exp) ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -313,24 +219,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             What are your dance goals? <span class="text-[#c9a96e]">*</span>
                         </span>
                         <div class="space-y-2.5">
-                            <?php foreach (
-                                [
-                                    "Learn basics/Gain confidence",
-                                    "Become a better dancer",
-                                    "Become an amazing dancer!",
-                                    "Enter dance competitions",
-                                    "Learn for an upcoming event",
-                                ]
-                                as $goal
-                            ): ?>
+                            <?php $goals = ["Learn basics/Gain confidence", "Become a better dancer", "Become an amazing dancer!", "Enter dance competitions", "Learn for an upcoming event"]; ?>
+                            <?php foreach ($goals as $goal): ?>
                                 <label class="flex items-center gap-3 px-4 py-3 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="radio" name="goals" value="<?php echo htmlspecialchars(
-                                        $goal,
-                                    ); ?>" required
-                                           class="accent-[#c9a96e] w-4 h-4">
-                                    <span class="text-stone-300 text-sm"><?php echo htmlspecialchars(
-                                        $goal,
-                                    ); ?></span>
+                                    <input type="radio" name="goals" value="<?= htmlspecialchars($goal) ?>" required
+                                           class="accent-[#c9a96e] w-4 h-4" <?= (($form_data['goals'] ?? '') === $goal) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= htmlspecialchars($goal) ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -348,9 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             Message <span class="text-stone-600">(please note Private or Group lesson)</span>
                         </label>
                         <textarea id="message" name="message" rows="4"
-                                  class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors resize-y"><?php echo htmlspecialchars(
-                                      $_POST["message"] ?? "",
-                                  ); ?></textarea>
+                                  class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors resize-y"><?= htmlspecialchars($form_data['message'] ?? '') ?></textarea>
                     </div>
 
                     <p class="text-stone-500 text-sm mb-4 tracking-wide uppercase">Planning a wedding dance?</p>
@@ -358,18 +250,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     <div class="mb-7">
                         <span class="block text-sm text-stone-300 mb-3 tracking-wide">Wedding Dance</span>
                         <div class="flex flex-wrap gap-3">
-                            <?php foreach (
-                                [
-                                    "Bride/Groom",
-                                    "Mother/Father",
-                                    "Wedding Party",
-                                ]
-                                as $role
-                            ): ?>
+                            <?php $roles = ["Bride/Groom", "Mother/Father", "Wedding Party"]; ?>
+                            <?php foreach ($roles as $role): ?>
                                 <label class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded border border-white/10 bg-stone-900 cursor-pointer hover:border-[#c9a96e]/50 transition-colors">
-                                    <input type="checkbox" name="wedding_dance[]" value="<?php echo $role; ?>"
-                                           class="accent-[#c9a96e] w-4 h-4">
-                                    <span class="text-stone-300 text-sm"><?php echo $role; ?></span>
+                                    <input type="checkbox" name="wedding_dance[]" value="<?= $role ?>"
+                                           class="accent-[#c9a96e] w-4 h-4" <?= in_array($role, $form_data['wedding_dance'] ?? []) ? 'checked' : '' ?>>
+                                    <span class="text-stone-300 text-sm"><?= $role ?></span>
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -379,25 +265,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <div>
                             <label for="wedding_song" class="block text-sm text-stone-300 mb-2 tracking-wide">Wedding Song</label>
                             <input type="text" id="wedding_song" name="wedding_song"
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["wedding_song"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['wedding_song'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                         </div>
                         <div>
                             <label for="event_type" class="block text-sm text-stone-300 mb-2 tracking-wide">Event Type</label>
                             <input type="text" id="event_type" name="event_type"
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["event_type"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['event_type'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors">
                         </div>
                         <div>
                             <label for="event_date" class="block text-sm text-stone-300 mb-2 tracking-wide">Event Date</label>
                             <input type="date" id="event_date" name="event_date"
-                                   value="<?php echo htmlspecialchars(
-                                       $_POST["event_date"] ?? "",
-                                   ); ?>"
+                                   value="<?= htmlspecialchars($form_data['event_date'] ?? '') ?>"
                                    class="w-full bg-stone-900 border border-white/10 rounded px-4 py-3 text-white placeholder-stone-600 focus:outline-none focus:border-[#c9a96e] focus:ring-1 focus:ring-[#c9a96e] transition-colors [color-scheme:dark]">
                         </div>
                     </div>
@@ -407,7 +287,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div>
                     <label class="flex items-start gap-3 cursor-pointer mb-8">
                         <input type="checkbox" name="newsletter" value="1"
-                               class="accent-[#c9a96e] w-4 h-4 mt-0.5">
+                               class="accent-[#c9a96e] w-4 h-4 mt-0.5" <?= !empty($form_data['newsletter']) ? 'checked' : '' ?>>
                         <span class="text-stone-400 text-sm leading-relaxed">
                             Yes, I want to subscribe to the newsletter and find out about classes, fun events, and more!
                         </span>
@@ -427,4 +307,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
 </section>
 
-<?php include "includes/footer.php"; ?>
+<?php snippet('footer') ?>

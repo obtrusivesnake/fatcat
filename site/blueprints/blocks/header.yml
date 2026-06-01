@@ -1,0 +1,15 @@
+name: Page Header
+icon: title
+preview: fields
+fields:
+  eyebrow:
+    label: Eyebrow Text
+    type: text
+    help: Small uppercase text displayed above the title
+  heading:
+    label: Title
+    type: text
+    required: true
+  subheading:
+    label: Subtitle
+    type: textarea

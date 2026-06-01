@@ -1,1 +1,105 @@
-Title: Site Title
+Title: Fatcat Ballroom
+
+----
+
+Nav_tagline: & Dance Company
+
+----
+
+Phone: (602) 324-7119
+
+----
+
+Email: hello@fatcatballroom.com
+
+----
+
+Booking_url: /classes
+
+----
+
+Meta_description: Fatcat Ballroom & Dance Company is Phoenix's home for social dancing. Group classes every night, no partner or registration required.
+
+----
+
+Address: 3131 E Thunderbird Road #33, Phoenix, AZ 85032
+
+----
+
+Address_note: SW corner of 32nd St & Thunderbird Rd, between Dollar Tree and VASA Fitness
+
+----
+
+Directions_url: https://maps.google.com/?q=3131+E+Thunderbird+Road+33+Phoenix+AZ+85032
+
+----
+
+Footer_blurb: Phoenix's home for social dancing for over 17 years.
+
+----
+
+Instagram_url: https://www.instagram.com/fatcatballroom/
+
+----
+
+Facebook_url: https://www.facebook.com/fatcatballroom/
+
+----
+
+Hours:
+
+-
+  days: Sunday
+  time: 9 am – 9 pm
+-
+  days: Mon – Thu
+  time: 9 am – 10 pm
+-
+  days: Fri – Sat
+  time: 9 am – 11 pm
+
+----
+
+Navigation:
+
+-
+  label: Calendar
+  url: /calendar
+-
+  label: Classes
+  url: /classes
+-
+  label: Private Lessons
+  url: /private-lessons
+-
+  label: Events
+  url: /events
+-
+  label: Fitness
+  url: /fitness
+-
+  label: About
+  url: /about
+
+----
+
+Footer_links:
+
+-
+  label: Class Schedule
+  url: /classes
+-
+  label: Private Lessons
+  url: /private-lessons
+-
+  label: Gift Certificates
+  url: /gift-certificates
+-
+  label: FAQ
+  url: /faq
+-
+  label: About Us
+  url: /about
+-
+  label: Dance Etiquette
+  url: /dance-etiquette

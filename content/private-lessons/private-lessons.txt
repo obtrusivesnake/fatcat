@@ -1,0 +1,17 @@
+Title: Private Lessons
+
+----
+
+Intro: For information about lessons or to schedule a private lesson, complete the form below. The details you share help us answer your questions and match you with an instructor who teaches the dances you want to learn, on the days you’re available.
+
+----
+
+Sub_intro: Our instructors are independent, so they set their own rates and schedules. There’s no obligation when receiving a callback, so get in touch - we’d love to hear from you!
+
+----
+
+No_partner_title: No partner? No problem.
+
+----
+
+No_partner_text: We teach both singles and couples. Please indicate Private or Group lesson in your message.

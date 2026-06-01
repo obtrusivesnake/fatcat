@@ -1,0 +1,38 @@
+name: Page Header
+icon: title
+preview: fields
+fields:
+  icon:
+    label: Icon
+    type: select
+    default: none
+    help: Optional decorative icon shown above the title
+    options:
+      none: None
+      calendar: Calendar
+      activity: Activity (fitness)
+      users: People
+      star: Star (award)
+      sparkles: Sparkles
+      graduation: Graduation cap
+      music: Music
+  eyebrow:
+    label: Eyebrow Text
+    type: text
+    help: Small uppercase text displayed above the title
+  heading:
+    label: Title
+    type: text
+    required: true
+  subheading:
+    label: Subtitle
+    type: textarea
+    size: small
+    help: Optional intro paragraph shown below the title
+  divider:
+    label: Show bottom divider?
+    type: toggle
+    default: false
+    text:
+      - "No"
+      - "Yes"

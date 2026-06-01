@@ -1,0 +1,37 @@
+Title: Rotating Latin Dance
+
+----
+
+Day: sunday
+
+----
+
+Class-time: 6:00 PM – 7:00 PM
+
+----
+
+Instructor: Miguel
+
+----
+
+Level: all-levels
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Feel the passion and rhythm of Latin dance. Learn the basic steps and feel how to connect with your partner on the dance floor. We rotate styles, so you'll learn a new one every week. A great way to meet new people and have fun in a low-pressure environment.
+
+----
+
+Note: Followed by Salsa class & Latin Dance Party
+
+----
+
+Uuid: ldrqqd8mks6fqrll

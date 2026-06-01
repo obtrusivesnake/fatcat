@@ -1,0 +1,37 @@
+Title: Line Dancing
+
+----
+
+Day: friday
+
+----
+
+Class-time: 6:00 PM – 7:00 PM
+
+----
+
+Instructor: 
+
+----
+
+Level: all-levels
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: No partner needed! In this fun, upbeat class, you'll learn a variety of popular line dances. It's a great way to get some exercise, learn some cool moves, and make new friends.
+
+----
+
+Note: Followed by West Coast Swing classes & Swing Dance Party
+
+----
+
+Uuid: 9xobkyvdgtr9ahfl

@@ -1,0 +1,35 @@
+title: About Page
+
+status: false
+
+options:
+  changeTemplate: false
+  changeStatus: false
+
+tabs:
+  content:
+    label: Content
+    icon: text
+    fields:
+      blocks:
+        type: blocks
+        label: Page Sections
+        empty: Add a section to build this page.
+        fieldsets:
+          - page_header
+          - header
+          - text
+          - trust_strip
+          - left_image
+          - right_image
+
+  seo:
+    label: SEO
+    icon: search
+    fields:
+      meta_description:
+        label: Meta Description
+        type: textarea
+        size: small
+        maxlength: 160
+        help: A short summary (up to 160 characters) shown in search engine results.

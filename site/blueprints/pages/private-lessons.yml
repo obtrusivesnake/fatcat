@@ -1,0 +1,19 @@
+title: Private Lessons Page
+preset: page
+
+fields:
+  intro:
+    label: Introduction
+    type: textarea
+    size: medium
+  sub_intro:
+    label: Sub-Introduction
+    type: textarea
+    size: medium
+  no_partner_title:
+    label: No Partner Title
+    type: text
+  no_partner_text:
+    label: No Partner Text
+    type: textarea
+    size: small

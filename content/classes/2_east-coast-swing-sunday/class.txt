@@ -1,0 +1,37 @@
+Title: East Coast Swing
+
+----
+
+Day: sunday
+
+----
+
+Class-time: 4:00 PM – 5:00 PM
+
+----
+
+Instructor: Keith
+
+----
+
+Level: all-levels
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Get ready to move to some upbeat tunes! A fun, high-energy way to learn the fundamentals of this popular dance. The lesson is perfect for all levels and is a great way to meet people.
+
+----
+
+Note: Followed by Keith's Arizona Two-Step class
+
+----
+
+Uuid: ihmbil3faaczlnrv

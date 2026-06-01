@@ -1,0 +1,52 @@
+title: Fitness Class
+
+options:
+  changeTemplate: false
+
+fields:
+  schedule:
+    label: Schedule
+    type: text
+    help: "When the class runs, e.g. \"Every day except Tuesdays\" or \"Tuesday & Thursday · By request\""
+
+  class_time:
+    label: Time
+    type: text
+    help: "e.g. 9:15 AM"
+
+  instructor:
+    label: Instructor
+    type: text
+    help: Name(s) of the instructor(s) teaching this class
+
+  price:
+    label: Price ($)
+    type: number
+    min: 0
+    help: Enter 0 for a free class
+
+  price_label:
+    label: Price Display Text
+    type: text
+    help: "How the price is shown, e.g. $5. Leave empty to use the price above."
+
+  by_request:
+    label: Available by request only?
+    type: toggle
+    default: false
+    text:
+      - "No"
+      - "Yes"
+
+  request_note:
+    label: Request Note
+    type: textarea
+    size: small
+    when:
+      by_request: true
+    help: Shown when the class is by request. Leave empty to use the default message.
+
+  description:
+    label: Description
+    type: textarea
+    help: A short paragraph describing the class

@@ -1,0 +1,37 @@
+Title: Argentine Tango
+
+----
+
+Day: monday
+
+----
+
+Class-time: 5:30 PM – 6:30 PM
+
+----
+
+Instructor: Terry Schmoyer
+
+----
+
+Level: all-levels
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Explore the intricate, elegant world of Argentine Tango. You'll learn how to connect with your partner and move with poise and grace. A great way to master a challenging and beautiful dance. With Fatcat Ballroom owner and Argentine Tango World Champion Terry Schmoyer.
+
+----
+
+Note: Followed by Chad, Marie & Vladi's American Ballroom classes
+
+----
+
+Uuid: alyj6qvgo5q6puds

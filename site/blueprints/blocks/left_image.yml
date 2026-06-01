@@ -1,0 +1,59 @@
+name: Image Left / Text Right
+icon: columns
+preview: fields
+fields:
+  image:
+    label: Image
+    type: files
+    max: 1
+    uploads:
+      accept: image/*
+  section_icon:
+    label: Decorative Icon
+    type: select
+    width: 1/2
+    default: none
+    help: Optional icon shown above the heading
+    options:
+      none: None
+      activity: Activity (fitness)
+      award: Award / Medal
+      calendar: Calendar
+      calendar-days: Calendar Days
+      door-open: Door (walk in)
+      gift: Gift
+      graduation-cap: Graduation Cap
+      headphones: Headphones
+      heart: Heart
+      moon: Moon
+      music: Music
+      phone: Phone
+      repeat: Repeat (rotate)
+      sparkles: Sparkles
+      star: Star
+      users: People
+  heading:
+    label: Heading
+    type: text
+    required: true
+  eyebrow:
+    label: Eyebrow Text
+    type: text
+    width: 1/2
+    help: Small uppercase text displayed above the heading
+  text:
+    label: Text
+    type: textarea
+  link_text:
+    label: Link Text
+    type: text
+  link_url:
+    label: Link URL
+    type: text
+  show_button:
+    label: Show as Button?
+    type: toggle
+    default: false
+    text:
+      - Text Link
+      - CTA Button

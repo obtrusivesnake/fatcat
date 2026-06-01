@@ -1,0 +1,37 @@
+Title: American Ballroom – Beginning Smooth
+
+----
+
+Day: monday
+
+----
+
+Class-time: 6:00 PM
+
+----
+
+Instructor: Chad, Marie & Vladi
+
+----
+
+Level: beginner
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Get to know the friendly and social style of American Ballroom. Two hours, two classes. Perfect for dancers of all levels who want to learn classic dances and feel comfortable on any dance floor. Every month a different dance.
+
+----
+
+Note: Currently featuring Waltz
+
+----
+
+Uuid: 05ojhns69mfim6l6

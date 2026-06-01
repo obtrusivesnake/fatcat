@@ -1,0 +1,36 @@
+Title: Fitness Classes
+
+----
+
+Uuid: fitness
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "icon": "activity",
+            "eyebrow": "Feel-good fitness, yoga & more",
+            "heading": "Fitness Classes",
+            "subheading": "Independent instructors offer feel-good fitness, yoga, and dance classes at our studio for increased energy, relaxation, and fun. Check the weekly lineup below and join us \u2014 no registration required.",
+            "divider": "true"
+        },
+        "id": "fitness-header",
+        "isHidden": false,
+        "type": "page_header"
+    },
+    {
+        "content": {
+            "heading": ""
+        },
+        "id": "fitness-list",
+        "isHidden": false,
+        "type": "fitness_list"
+    }
+]
+
+----
+
+Meta_description: Fatcat Ballroom offers morning fitness classes in Phoenix including Zumba, Holy Yoga, Chair Yoga, and Strength Training. Just $5 per session, no registration required.

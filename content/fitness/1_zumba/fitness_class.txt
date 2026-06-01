@@ -1,0 +1,33 @@
+Title: Zumba
+
+----
+
+Schedule: Every day except Tuesdays
+
+----
+
+Class_time: 9:15 AM
+
+----
+
+Instructor: Sarah Lloyd, Lexi Kenrick, Judy & Jill
+
+----
+
+Price: 5
+
+----
+
+Price_label: $5
+
+----
+
+By_request: false
+
+----
+
+Request_note: 
+
+----
+
+Description: Dance your way to fitness! This high-energy class blends easy-to-follow dance moves with upbeat Latin and international music for a feel-good workout. No experience needed — just bring your energy and have fun while you sweat.

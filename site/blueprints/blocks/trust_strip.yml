@@ -1,0 +1,30 @@
+name: Trust Strip
+icon: bolt
+preview: fields
+fields:
+  items:
+    label: Trust Points
+    type: structure
+    help: Short reassurance points shown in a row (e.g. "Walk in anytime"). Add, remove, or reorder freely.
+    fields:
+      icon:
+        label: Icon
+        type: select
+        default: check
+        options:
+          ticket: Ticket (walk in)
+          users: People (partners)
+          moon: Moon (evenings)
+          calendar: Calendar
+          dollar: Dollar (pricing)
+          heart: Heart
+          sparkles: Sparkles
+          check: Checkmark
+      title:
+        label: Title
+        type: text
+        required: true
+      description:
+        label: Description
+        type: text
+        help: One short line of supporting text

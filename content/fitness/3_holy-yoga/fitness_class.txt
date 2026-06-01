@@ -1,0 +1,33 @@
+Title: Holy Yoga
+
+----
+
+Schedule: Tuesdays
+
+----
+
+Class_time: 9:15 AM
+
+----
+
+Instructor: Haley Cloud
+
+----
+
+Price: 5
+
+----
+
+Price_label: $5
+
+----
+
+By_request: false
+
+----
+
+Request_note: 
+
+----
+
+Description: Connect mind, body, and spirit in this faith-centered yoga practice. Move through gentle stretches and poses designed to bring relaxation, flexibility, and peace. All experience levels are welcome.

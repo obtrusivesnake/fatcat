@@ -1,0 +1,36 @@
+Title: Classes
+
+----
+
+Uuid: classes
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "icon": "music",
+            "eyebrow": "Every night of the week",
+            "heading": "Group Classes",
+            "subheading": "No partner or registration required \u2014 just walk in. Browse our full lineup of group classes below and find the perfect one for you.",
+            "divider": "true"
+        },
+        "id": "classes-header",
+        "isHidden": false,
+        "type": "page_header"
+    },
+    {
+        "content": {
+            "heading": ""
+        },
+        "id": "classes-list",
+        "isHidden": false,
+        "type": "class_list"
+    }
+]
+
+----
+
+Meta_description: Browse Fatcat Ballroom's full lineup of group dance classes in Phoenix. Salsa, Bachata, Swing, Tango, Ballroom and more — every night, no partner or registration required.

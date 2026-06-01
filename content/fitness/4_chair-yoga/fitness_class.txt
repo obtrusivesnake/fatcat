@@ -1,0 +1,33 @@
+Title: Chair Yoga
+
+----
+
+Schedule: Fridays
+
+----
+
+Class_time: 11:00 AM
+
+----
+
+Instructor: Patricia
+
+----
+
+Price: 5
+
+----
+
+Price_label: $5
+
+----
+
+By_request: false
+
+----
+
+Request_note: 
+
+----
+
+Description: Enjoy the benefits of yoga from the comfort of a chair. This gentle, accessible class improves flexibility, balance, and circulation — ideal for those who prefer a low-impact, supportive practice.

@@ -1,0 +1,65 @@
+title: Class
+
+options:
+  changeTemplate: false
+
+fields:
+  day:
+    label: Day
+    type: select
+    width: 1/2
+    help: The day of the week this class is held on
+    options:
+      sunday: Sunday
+      monday: Monday
+      tuesday: Tuesday
+      wednesday: Wednesday
+      thursday: Thursday
+      friday: Friday
+      saturday: Saturday
+
+  class_time:
+    label: Time
+    type: text
+    width: 1/2
+    help: "When the class runs, e.g. 6:00 PM – 7:00 PM"
+
+  instructor:
+    label: Instructor
+    type: text
+    help: Name(s) of the instructor(s) teaching this class. Leave empty if none.
+
+  level:
+    label: Level
+    type: select
+    width: 1/2
+    default: all-levels
+    help: Who the class is suited for
+    options:
+      all-levels: All Levels
+      beginner: Beginner
+      intermediate: Intermediate
+      advanced: Advanced
+
+  price:
+    label: Price ($)
+    type: number
+    width: 1/2
+    min: 0
+    help: Enter 0 for a free class
+
+  price_label:
+    label: Price Display Text
+    type: text
+    help: "How the price is shown, e.g. $10, $10 member · $15 non-member. Leave empty to use the price above."
+
+  description:
+    label: Description
+    type: textarea
+    help: A short paragraph describing the class
+
+  note:
+    label: Note
+    type: textarea
+    size: small
+    help: Optional extra info shown below the description (e.g. what class follows this one)

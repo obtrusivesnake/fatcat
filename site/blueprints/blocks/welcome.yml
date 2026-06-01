@@ -1,0 +1,10 @@
+name: Welcome
+icon: heart
+preview: fields
+fields:
+  heading:
+    label: Heading
+    type: text
+  text:
+    label: Text
+    type: textarea

@@ -1,0 +1,30 @@
+name: Hero Section
+icon: image
+preview: fields
+fields:
+  hero_title:
+    label: Headline
+    type: text
+    required: true
+  hero_subtitle:
+    label: Subtitle
+    type: text
+  hero_image:
+    label: Background Image
+    type: files
+    max: 1
+    uploads:
+      accept: image/*
+  cta_label:
+    label: Button Label
+    type: text
+    default: Book Online
+  cta_url:
+    label: Button URL
+    type: url
+  cta2_label:
+    label: Secondary Button Label
+    type: text
+  cta2_url:
+    label: Secondary Button URL/Phone
+    type: text

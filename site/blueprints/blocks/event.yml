@@ -1,0 +1,16 @@
+name: Event
+icon: calendar
+fields:
+  heading:
+    type: text
+    label: Heading
+  time:
+    type: text
+    label: Time
+  image:
+    type: files
+    label: Image
+    max: 1
+  text:
+    type: textarea
+    label: Text

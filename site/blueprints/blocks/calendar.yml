@@ -1,0 +1,13 @@
+name: Calendar Embed
+icon: calendar
+preview: fields
+fields:
+  calendar_url:
+    label: Calendar Embed URL
+    type: url
+    required: true
+    help: The full URL used as the iframe source
+  iframe_height:
+    label: Calendar Height (px)
+    type: number
+    default: 2883

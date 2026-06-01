@@ -1,0 +1,12 @@
+title: Events
+icon: calendar
+
+sections:
+  content:
+    type: fields
+    fields:
+      blocks:
+        type: blocks
+        fieldsets:
+          - page_header
+          - event

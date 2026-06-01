@@ -1,0 +1,34 @@
+name: Dual Printable
+icon: image
+preview: fields
+help: Two printable images shown side by side (stacked on mobile). Each has a Print button that opens the print dialog for its PDF.
+fields:
+  heading:
+    label: Heading / Description
+    type: textarea
+    size: small
+    help: Title or short explanation shown above the two printables (e.g. "Print our monthly schedules").
+  image_1:
+    label: First Image
+    type: files
+    max: 1
+    width: 1/2
+    uploads:
+      accept: image/*
+  pdf_1:
+    label: First PDF Link
+    type: url
+    width: 1/2
+    help: The PDF that opens for printing when the first button is clicked.
+  image_2:
+    label: Second Image
+    type: files
+    max: 1
+    width: 1/2
+    uploads:
+      accept: image/*
+  pdf_2:
+    label: Second PDF Link
+    type: url
+    width: 1/2
+    help: The PDF that opens for printing when the second button is clicked.

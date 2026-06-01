@@ -1,1 +1,109 @@
 Title: Home
+
+----
+
+Blocks:
+
+-
+  content:
+    hero_title: Learn any kind of partner dance, no matter your skill level
+    hero_subtitle: "Phoenix's home for social dancing for over 17 years"
+    hero_image:
+      - hero.jpg
+    cta_label: Book Online
+    cta_url: /classes
+    cta2_label: Call (602) 324-7119
+    cta2_url: tel:6023247119
+  id: hero-section
+  type: hero
+-
+  content:
+    items:
+      -
+        description: No signup or registration required to enjoy our lessons
+        icon: door-open
+        title: Walk in anytime
+      -
+        description: Everyone rotates partners in class, so you'll never be left alone
+        icon: users
+        title: No partner needed
+      -
+        description: For everyone, from beginners to professionals
+        icon: moon
+        title: Classes every night
+      -
+        description: Our group classes are either $10 or $15
+        icon: dollar
+        title: Affordable pricing
+  id: trust-strip
+  type: trust_strip
+-
+  content:
+    heading: Welcome to Fatcat Ballroom & Dance Company
+    text: "We’re an inclusive, community-centered dance studio that offers group dancing, private lessons, and social events every day, all week, every week. Founded 17 years ago by Terry Schmoyer, three-time Argentine Tango World Champion, we offer a wide variety of dance lessons taught by professional instructors. Walk in tonight and start dancing, no experience or registration required."
+  id: welcome-section
+  type: welcome
+-
+  content:
+    heading: No Partner? No Problem.
+    section_icon: repeat
+    image:
+      - npnp.jpg
+    text: "The most common question we get is \"What if I don't have a dance partner?\" In our group classes, everyone rotates partners throughout the lesson. You'll get to dance with multiple people, and you won't ever be left out. Whether you show up in a pair or by yourself, you'll be dancing in no time."
+    link_text: "View tonight's classes"
+    link_url: "/classes"
+    show_button: false
+  id: no-partner
+  type: left_image
+-
+  content:
+    heading: Classes every night, no registration required
+    section_icon: calendar-days
+    image:
+      - classes.jpg
+    text: "At Fatcat, we don't lock you into long-term commitments. Simply check tonight's schedule and walk right in. We offer classes such as Salsa, Bachata, West Coast and East Coast Swing, Argentine Tango, American and International Ballroom, Line Dancing, Arizona Two-Step, and more. Our classes are for everyone, whether you're a complete beginner or an experienced dancer."
+    link_text: "See full schedule"
+    link_url: "/calendar"
+    show_button: false
+  id: classes-night
+  type: right_image
+-
+  content:
+    heading: Private lessons for singles or couples
+    section_icon: graduation-cap
+    image:
+      - private.jpg
+    text: "Whether you're preparing for a wedding dance, training for a big competition, or simply want to benefit from one-on-one time with our expert instructors, our private lessons will help you become the dancer you most want to be.\n\nWe'll match you with the right instructor for your goals, from Latin styles like Bachata and Salsa to classic Ballroom and everything in between."
+    link_text: "Book a Private Lesson"
+    link_url: "/private-lessons"
+    show_button: true
+  id: private-lessons
+  type: left_image
+-
+  content:
+    heading: Fitness classes every morning
+    section_icon: activity
+    image:
+      - yoga.avif
+    text: "In addition to dance lessons, our studio offers fitness classes every morning for just $5 per session. We offer Zumba, our Latin-inspired dance fitness class, every morning at 9:15am except Tuesday. On Tuesdays at 9:15am, we offer Holy Yoga, combining movement and relaxation with the celebration of God. Every Friday at 11am, we offer Chair Yoga, gentle movement for balance, flexibility, and confidence."
+    link_text: "Explore fitness classes"
+    link_url: "/fitness"
+    show_button: false
+  id: fitness-morning
+  type: right_image
+-
+  content:
+    heading: What happens on my first night?
+    section_icon: sparkles
+    image:
+      - firstnight.jpg
+    text: "It's only natural to be nervous your first time dancing. Simply wear comfortable clothing and shoes; you don't need a special outfit. Show up a few minutes before your lesson starts, so our warm and friendly front desk team can help get you taken care of. You'll join the group, and the instructor will guide everyone through the lesson. You'll rotate partners with everyone in the group, so you'll never sit on the sidelines. Afterwards, it's optional open social dancing, where you can join your new friends as you laugh and enjoy each other's conversation on the dance floor."
+    link_text: "Questions? Call (602) 324-7119"
+    link_url: "tel:6023247119"
+    show_button: false
+  id: what-to-expect
+  type: left_image
+
+----
+
+Uuid: x8odjbyomtaanvuu

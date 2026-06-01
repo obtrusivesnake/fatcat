@@ -1,0 +1,33 @@
+Title: Strength Training
+
+----
+
+Schedule: Tuesday & Thursday · By request
+
+----
+
+Class_time: 8:15 AM
+
+----
+
+Instructor: Sarah Lloyd
+
+----
+
+Price: 8
+
+----
+
+Price_label: $8
+
+----
+
+By_request: true
+
+----
+
+Request_note: Available upon request — please call or text the day before to attend.
+
+----
+
+Description: Build strength, tone muscle, and boost your energy with this resistance-based workout. Perfect for all fitness levels, you'll work at your own pace while building a stronger, healthier body.

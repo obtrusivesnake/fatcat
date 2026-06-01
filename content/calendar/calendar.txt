@@ -1,0 +1,49 @@
+Title: Calendar
+
+----
+
+Uuid: calendar
+
+----
+
+Blocks:
+
+[
+    {
+        "content": {
+            "icon": "calendar",
+            "eyebrow": "",
+            "heading": "Calendar",
+            "subheading": "View our full calendar for a complete list of group classes, social dance parties, and live band events happening every night of the week. No partner or registration required \u2014 just walk in!",
+            "divider": "false"
+        },
+        "id": "cal-header",
+        "isHidden": false,
+        "type": "page_header"
+    },
+    {
+        "content": {
+            "calendar_url": "https://plugin.eventscalendar.co/widget.html?pageId=kp6fk&compId=comp-mf64euri3&viewerCompId=comp-mf64euri3&siteRevision=4&viewMode=site&deviceType=desktop&locale=en&tz=America%2FPhoenix&regionalLanguage=en&width=978&height=2883&instance=UtxPS3Y1O8pbZ1GROBaiIVdtPN3656rZp4u_XXREz0g.eyJpbnN0YW5jZUlkIjoiNjUxZmJjOWQtYTVmMy00MTdhLTg3N2YtZjg2NjYxYjUzNzVhIiwiYXBwRGVmSWQiOiIxMzNiYjExZS1iM2RiLTdlM2ItNDliYy04YWExNmFmNzJjYWMiLCJzaWduRGF0ZSI6IjIwMjYtMDYtMDFUMDE6MTg6MDQuMzU0WiIsInZlbmRvclByb2R1Y3RJZCI6InByb2Zlc3Npb25hbCIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiNTRmOWQ1YTctYzUxZi00ZmI0LWI3ZjItOWNiZWRmYWQ2MmQzIiwic2l0ZU93bmVySWQiOiI1ODMxOTU1NC1kZTg1LTQ2NjAtYjJhNy1kZTY2MTAxZGY4ZTciLCJicyI6ImhnajNVOHBmUUxkSi1lZkRWaHRCLW14b0xqRVRValhrbmhUNGN4Ui1TbVEiLCJzY2QiOiIyMDIxLTExLTAyVDAxOjQ3OjI3LjAzOVoiLCJhY2QiOiIyMDIzLTAyLTAxVDE0OjI3OjQxWiJ9&currency=USD&currentCurrency=USD&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%227054c482-b2ec-4c37-8a48-f12c8d9c1ff5%7C2%22%2C%22siteRevision%22%3A%224%22%2C%22branchId%22%3A%22d96146f3-8990-4383-b755-d1a848b5037d%22%2C%22renderingFlow%22%3A%22NONE%22%2C%22language%22%3A%22en%22%2C%22locale%22%3A%22en-us%22%2C%22BSI%22%3A%227054c482-b2ec-4c37-8a48-f12c8d9c1ff5%7C2%22%7D&currentRoute=.%2Fdance-classes-phoenix&vsi=0e0c6b95-5809-496d-895a-220a78be5588",
+            "iframe_height": "2883"
+        },
+        "id": "cal-embed",
+        "isHidden": false,
+        "type": "calendar"
+    },
+    {
+        "content": {
+            "heading": "Print a Monthly Schedule",
+            "image_1": "may_printable.avif",
+            "pdf_1": "https://www.fatcatballroom.com/_files/ugd/583195_7f72f2e5d28f4adf98b2ebe3074cd86f.pdf",
+            "image_2": "june_printable.avif",
+            "pdf_2": "https://www.fatcatballroom.com/_files/ugd/583195_d24d9ed8df8f43028b799356c1a4f972.pdf"
+        },
+        "id": "cal-printables",
+        "isHidden": false,
+        "type": "dual_printable"
+    }
+]
+
+----
+
+Meta_description: View the full Fatcat Ballroom calendar. Group classes, social dance parties, and live band events every night in Phoenix. No partner or registration required.

@@ -1,0 +1,37 @@
+Title: Arizona Two-Step
+
+----
+
+Day: sunday
+
+----
+
+Class-time: 5:00 PM – 6:00 PM
+
+----
+
+Instructor: Keith
+
+----
+
+Level: all-levels
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Get a feel for the rhythm of the West. Learn the essential steps of the Arizona Two-Step, a popular social dance. It's an easy-to-learn dance that you can use at any country event.
+
+----
+
+Note: Followed by Miguel's Bachata and Salsa classes & Latin Dance Party
+
+----
+
+Uuid: jrnqsphvcfklas0w

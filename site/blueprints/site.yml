@@ -1,5 +1,161 @@
-title: Site
+title: Fatcat Ballroom
 
-sections:
+tabs:
   pages:
-    type: pages
+    label: Pages
+    icon: page
+    sections:
+      pages:
+        type: pages
+        label: Pages
+        templates:
+          - home
+          - about
+          - classes
+          - calendar
+          - fitness
+        info: "{{ page.template }}"
+
+  settings:
+    label: Settings
+    icon: cog
+    columns:
+      - width: 1/2
+        fields:
+          brand_heading:
+            label: Branding
+            type: headline
+          title:
+            label: Site Title
+            type: text
+            required: true
+            help: Shown in the navigation bar and footer (e.g. "Fatcat Ballroom").
+          nav_tagline:
+            label: Navigation Tagline
+            type: text
+            help: Small text under the site title in the navigation bar (e.g. "& Dance Company").
+          booking_url:
+            label: '"Book Online" Link'
+            type: text
+            default: /classes
+            help: Where the "Book Online" buttons point. Can be a page path (e.g. /classes) or full URL.
+          meta_description:
+            label: Default Meta Description
+            type: textarea
+            size: small
+            maxlength: 160
+            help: Default search-engine summary, used when a page has none of its own.
+
+      - width: 1/2
+        fields:
+          contact_heading:
+            label: Contact
+            type: headline
+          phone:
+            label: Phone Number
+            type: text
+            help: Displayed in the navigation and footer.
+          email:
+            label: Email Address
+            type: email
+            help: Displayed in the footer.
+
+  contact:
+    label: Location & Footer
+    icon: pin
+    columns:
+      - width: 1/2
+        fields:
+          location_heading:
+            label: Location
+            type: headline
+          address:
+            label: Address
+            type: textarea
+            size: small
+            help: Studio street address. Line breaks are preserved.
+          address_note:
+            label: Address Note
+            type: text
+            help: Extra directions or landmarks shown under the address.
+          directions_url:
+            label: Directions Link
+            type: url
+            help: Link to Google Maps directions.
+          footer_blurb:
+            label: Footer Blurb
+            type: textarea
+            size: small
+            help: Short sentence shown beside the logo in the footer.
+
+      - width: 1/2
+        fields:
+          social_heading:
+            label: Social Media
+            type: headline
+          instagram_url:
+            label: Instagram URL
+            type: url
+          facebook_url:
+            label: Facebook URL
+            type: url
+          hours_heading:
+            label: Opening Hours
+            type: headline
+          hours:
+            label: Hours
+            type: structure
+            help: Each row is a line in the footer's Hours column.
+            fields:
+              days:
+                label: Day(s)
+                type: text
+                required: true
+              time:
+                label: Time
+                type: text
+                required: true
+
+  navigation:
+    label: Menus
+    icon: menu
+    columns:
+      - width: 1/2
+        fields:
+          nav_heading:
+            label: Main Navigation
+            type: headline
+          navigation:
+            label: Navigation Links
+            type: structure
+            help: Links shown in the top navigation bar. Reorder by dragging.
+            fields:
+              label:
+                label: Label
+                type: text
+                required: true
+              url:
+                label: URL
+                type: text
+                required: true
+                help: A page path (e.g. /classes) or full URL.
+
+      - width: 1/2
+        fields:
+          footer_nav_heading:
+            label: Footer Quick Links
+            type: headline
+          footer_links:
+            label: Quick Links
+            type: structure
+            help: Links shown in the footer's "Quick Links" column.
+            fields:
+              label:
+                label: Label
+                type: text
+                required: true
+              url:
+                label: URL
+                type: text
+                required: true
+                help: A page path (e.g. /about) or full URL.

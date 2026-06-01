@@ -1,0 +1,20 @@
+Title: Events
+
+----
+
+Blocks:
+- 
+  content:
+    heading: Upcoming Events
+  id: 2a8f3b4c-9e1d-4f7a-8b3c-1c9c7f3e1d6c
+  type: page_header
+- 
+  content: 
+    heading: First Night Fun!
+    time: "Friday, October 25th, 2024 @ 7:00pm"
+    image:
+      - https://placehold.co/1280x720
+    text: |
+      Join us for a fun night of dancing! This is a special event for all levels. We will have a variety of music and a great atmosphere. Come and meet new people and have a great time!
+  id: 4a7c1b8f-7e9b-4f8a-9b1e-2c9c7f3e1d6c
+  type: event

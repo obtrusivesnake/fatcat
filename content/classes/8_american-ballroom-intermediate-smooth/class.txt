@@ -1,0 +1,37 @@
+Title: American Ballroom – Intermediate Smooth
+
+----
+
+Day: monday
+
+----
+
+Class-time: 6:45 PM
+
+----
+
+Instructor: Chad, Marie & Vladi
+
+----
+
+Level: intermediate
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Build on the basics and develop your American Ballroom technique with more advanced patterns and styling. Every month a different dance.
+
+----
+
+Note: Currently featuring Waltz
+
+----
+
+Uuid: rkm2och23ufujlns

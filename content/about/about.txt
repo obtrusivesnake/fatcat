@@ -1,0 +1,86 @@
+Title: About
+
+----
+
+Blocks:
+
+-
+  id: 2f7a9e7d-927b-4b7b-8e1e-9e7f6b9c9e8c
+  type: page_header
+  content:
+    eyebrow: Sharing our love of dance
+    heading: About Us
+-
+  id: 0e7e4e1a-2c3b-4d4e-8e1e-9e7f6b9c9e8c
+  type: text
+  content:
+    text: |
+      For over 17 years, Fatcat Ballroom has been a gathering place for dancers of every age and skill level. Terry Schmoyer founded Fatcat Ballroom in 2008 after instructing for ten years. Passionate about dance, he wanted to create a place where everyone, from casual learners to competitive dancers, is able to experience the joy of this art form.
+
+      When you visit us, you will find friendly faces, an easy-going atmosphere, and a comfortable place where you can learn and practice dancing with others. Whether it's your first lesson or your thousandth, we're glad you're here, and we can't wait to dance with you.
+-
+  id: 3c1a3e6d-7e9b-4b1e-a4e9-9e7f6b9c9e8c
+  type: left_image
+  content:
+    image:
+      - instructors.avif
+    section_icon: users
+    heading: Dance Instructors
+    text: |
+      Meet the professionally trained dance instructors who give dance lessons at our studio, participate in our dance events for charity, and contribute to Fatcat Ballroom’s overall success.
+
+      Yoshi Arnott, Mona Brandt, Chad and Marie Burson, Natalie Crandall, Keith Cyrnek, Tina French, Laura Bates, Igor, Roy and Sharon Johnson, Ivan Khudoliy and Alisa Seleznova, Liegh Anne, Genadi Lulchev, Miguel, Vladi Pavlov, Oleksiy Pigotskyy, Oleg Teleha, Anastasiia Zhuchenko, Roseann Cala Ostapovich
+-
+  id: 8f9a2b5e-4c6d-4b8e-9e7f-6b9c9e8c4d7e
+  type: right_image
+  content:
+    image:
+      - terry-instructors.avif
+    section_icon: award
+    eyebrow: Owner and Founder
+    heading: Terry Schmoyer
+    text: |
+      Terry was born and raised on a farm in Pennsylvania and was brought up to believe that people are intrinsically good and that some people just need a little help along the way. Terry loves to help others, which led him to teach children the disciplines that he learned in martial arts and that helped him in his own life’s journey.
+
+      In 1996, Terry moved to Arizona, and it was here that he discovered ballroom dancing. Terry became an instructor after two years, and after ten years of dancing competitively and instructing, he decided to start his own dance studio and opened Fatcat Ballroom in 2008. His goal was to have a place where everyone could come to dance and experience the positive and life-changing impact it could have on their lives.
+-
+  id: 1b9c8e4d-6b8e-4b1e-a4e9-9e7f6b9c9e8c
+  type: left_image
+  content:
+    image:
+      - placeholder.png
+    section_icon: users
+    heading: Administrative Team Members
+    text: |
+      Danielle, Susan, Lindsay, Joe, Chris, Mel, Texas John, Lily, Rich, and Curtis
+
+      These folks welcome you to the ballroom, answer the phone and your questions, book lessons, set up events, and perform many other essential duties to keep things running smoothly in the studio. Their contributions are an important part of our business’s success.
+-
+  id: 7e4d2c1a-9b8e-4b1e-a4e9-9e7f6b9c9e8c
+  type: right_image
+  content:
+    image:
+      - placeholder.png
+    section_icon: users
+    heading: More Instructors
+    text: |
+      We also welcome several other independent instructors to our studio. They offer feel-good fitness, yoga, and dance classes for increased energy, relaxation, and fun! Be sure to check out our fitness calendar for class times and join us!
+
+      Sarah Lloyd — Zumba | Strength Training
+      Lexi Kenrick — Zumba
+      Judy and Jill — Zumba
+      Haley Cloud — Holy Yoga
+      Patricia — Chair Yoga
+-
+  id: b4e2a1c9-8e4d-4b1e-a4e9-9e7f6b9c9e8c
+  type: left_image
+  content:
+    image:
+      - terry.avif
+    heading: Thank you, everyone!
+    text: |
+      — Terry
+
+----
+
+Uuid: 3b1hfpwsgszqvnaz

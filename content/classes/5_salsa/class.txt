@@ -1,0 +1,37 @@
+Title: Salsa
+
+----
+
+Day: sunday
+
+----
+
+Class-time: 7:00 PM – 8:00 PM
+
+----
+
+Instructor: Miguel
+
+----
+
+Level: all-levels
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Ignite your confidence with Miguel's high-energy Salsa classes. You'll learn the fundamental steps and turns of this popular Latin dance. Our lessons are perfect for new dancers who want to move with rhythm and style. No partner is needed!
+
+----
+
+Note: Followed by Miguel's Latin Dance Party
+
+----
+
+Uuid: dugsxnsjafhmgd1e

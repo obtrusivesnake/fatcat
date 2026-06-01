@@ -1,0 +1,37 @@
+Title: Two Step & Twirl – Beginning
+
+----
+
+Day: thursday
+
+----
+
+Class-time: 6:15 PM
+
+----
+
+Instructor: Keith
+
+----
+
+Level: beginner
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: (Description to be added)
+
+----
+
+Note: 
+
+----
+
+Uuid: kjz03pigfknu4ijl

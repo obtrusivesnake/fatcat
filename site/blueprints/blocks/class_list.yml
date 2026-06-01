@@ -1,0 +1,8 @@
+name: Class Listing
+icon: list-bullet
+preview: fields
+fields:
+  heading:
+    label: Section Heading
+    type: text
+    default: Group Classes

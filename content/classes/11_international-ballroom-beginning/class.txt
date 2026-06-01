@@ -1,0 +1,37 @@
+Title: International Ballroom – Beginning
+
+----
+
+Day: wednesday
+
+----
+
+Class-time: 6:30 PM
+
+----
+
+Instructor: Roseann & Bob
+
+----
+
+Level: beginner
+
+----
+
+Price: 10
+
+----
+
+Price-label: $10
+
+----
+
+Description: Ready to dance like a pro? This class focuses on the elegant technique and style of International Ballroom. Learn sophisticated steps and movements in a variety of dances that will get you ready for the competition floor or a night out. Every month a different dance.
+
+----
+
+Note: Currently featuring Waltz
+
+----
+
+Uuid: ei3fplpcbi005yqu

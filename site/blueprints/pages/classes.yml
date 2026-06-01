@@ -1,0 +1,47 @@
+title: Classes Page
+
+status: false
+
+options:
+  changeTemplate: false
+  changeStatus: false
+
+tabs:
+  content:
+    label: Content
+    icon: text
+    fields:
+      blocks:
+        type: blocks
+        label: Page Sections
+        empty: Add a section to build this page.
+        fieldsets:
+          - page_header
+          - header
+          - class_list
+          - trust_strip
+          - left_image
+          - right_image
+
+  manage:
+    label: Manage Classes
+    icon: list-bullet
+    sections:
+      classes:
+        type: pages
+        label: Group Classes
+        info: "{{ page.day }} · {{ page.class_time }}"
+        template: class
+        create: class
+        empty: No classes yet. Add one to get started.
+
+  seo:
+    label: SEO
+    icon: search
+    fields:
+      meta_description:
+        label: Meta Description
+        type: textarea
+        size: small
+        maxlength: 160
+        help: A short summary (up to 160 characters) shown in search engine results.
