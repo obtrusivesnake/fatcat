@@ -5,7 +5,7 @@ $nav_links = [
     ["label" => "Calendar", "href" => "/calendar.php"],
     ["label" => "Classes", "href" => "/classes.php"],
     ["label" => "Private Lessons", "href" => "/private-lessons.php"],
-    ["label" => "Events", "href" => "/community.php"],
+    ["label" => "Events", "href" => "/events.php"],
     ["label" => "Fitness", "href" => "/fitness.php"],
     ["label" => "About", "href" => "/about.php"],
 ]; ?>

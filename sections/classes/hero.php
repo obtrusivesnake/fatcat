@@ -11,7 +11,7 @@
         <p class="text-base text-stone-400 leading-relaxed max-w-xl mx-auto">
             View our group class schedule at Fatcat Ballroom.
             Simply pick a class and walk in a few minutes before it starts.
-            You can pay online, or come in and pay after your class.
+            You can pay online, or come in and pay before your class.
         </p>
     </div>
 </section>

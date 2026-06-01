@@ -169,6 +169,41 @@ $classes = [
         "note" => "Currently featuring Waltz",
     ],
 
+    // ── Thursday ──
+    [
+        "day" => "Thursday",
+        "name" => "Two Step & Twirl &ndash; Beginning",
+        "instructor" => "Keith",
+        "time" => "6:15 PM",
+        "price" => 10,
+        "price_label" => "$10",
+        "level" => "Beginners",
+        "description" => "(Description to be added)",
+        "note" => "",
+    ],
+    [
+        "day" => "Thursday",
+        "name" => "Two Step & Twirl &ndash; Intermediate",
+        "instructor" => "Keith",
+        "time" => "7:15 PM",
+        "price" => 10,
+        "price_label" => "$10",
+        "level" => "Beginners",
+        "description" => "(Description to be added)",
+        "note" => "",
+    ],
+    [
+        "day" => "Thursday",
+        "name" => "Country Dancing Guided Practice",
+        "instructor" => "(Instructor to be added)",
+        "time" => "8:00 PM",
+        "price" => 5,
+        "price_label" => "$5",
+        "level" => "Beginners",
+        "description" => "(Description to be added)",
+        "note" => "",
+    ],
+
     // ── Friday ──
     [
         "day" => "Friday",
@@ -214,7 +249,7 @@ $classes = [
 <section>
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.06]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.12]">
 
             <?php foreach ($classes as $class): ?>
                 <article class="bg-stone-950 p-6 sm:p-8 flex flex-col">
@@ -255,7 +290,7 @@ $classes = [
                     <?php endif; ?>
 
                     <!-- Price + Action -->
-                    <div class="flex items-end justify-between gap-4 mt-auto pt-5 border-t border-white/[0.06]">
+                    <div class="flex items-end justify-between gap-4 mt-auto pt-5">
                         <?php if ($class["price"] === 0): ?>
                             <span class="font-display text-2xl text-emerald-400 italic">Free</span>
                             <span class="text-sm text-stone-600 tracking-wide">Walk in</span>
@@ -275,6 +310,9 @@ $classes = [
 
                 </article>
             <?php endforeach; ?>
+            <?php if (count($classes) % 2 !== 0): ?>
+                <div class="bg-stone-950"></div>
+            <?php endif; ?>
 
         </div>
 

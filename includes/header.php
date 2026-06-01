@@ -1,5 +1,5 @@
 <?php
-// includes/header.php - DOCTYPE, head, opening body tag
+// includes/header.php - DOCTYPE, head, opening body tag, opening div, and navigation
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,3 +20,6 @@
     <link rel="stylesheet" href="assets/custom.css">
 </head>
 <body>
+
+<div class="min-h-screen bg-stone-950 text-stone-300 antialiased font-body">
+    <?php include "includes/nav.php"; ?>
